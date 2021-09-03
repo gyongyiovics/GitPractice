@@ -12,7 +12,7 @@ public class Humanoid implements HumanoidInterface {
     protected String firstName;
     protected LocalDate birth;
     protected boolean isSad;
-    protected Gender gender;
+
 
     protected List<Animal> petsOwned;
 
@@ -44,10 +44,6 @@ public class Humanoid implements HumanoidInterface {
         return petsOwned;
     }
 
-    public Gender getGender() {
-        return gender;
-    }
-
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
@@ -68,9 +64,6 @@ public class Humanoid implements HumanoidInterface {
         this.petsOwned = petsOwned;
     }
 
-    public void setGender(Gender gender) {
-        this.gender = gender;
-    }
 
     @Override
     public void getNewPet(Animal animal) {
