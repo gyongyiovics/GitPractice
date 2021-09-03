@@ -3,6 +3,7 @@ package main.model.animals;
 import main.model.Food;
 import main.model.humanoids.Humanoid;
 
+import javax.sound.midi.Soundbank;
 import java.time.LocalDate;
 
 public class Animal implements AnimalInterface {
@@ -25,19 +26,20 @@ public class Animal implements AnimalInterface {
         this.owner = owner;
     }
 
+
     @Override
     public void eat() {
-        // TODO
+        System.out.println(getName() + " eats his food.");
     }
 
     @Override
     public void makeSound() {
-        // TODO
+        System.out.println(getName() + " makes sounds.");
     }
 
     @Override
     public void play() {
-        // TODO
+        System.out.println(getName() + " plays.");
     }
 
     public void setName(String name) {
