@@ -65,17 +65,20 @@ public class Humanoid implements HumanoidInterface {
 
     @Override
     public void getNewPet(Animal animal) {
-        // TODO
+        this.getPetsOwned().add(animal);
+        System.out.println("My new pet is: " + animal.getName());
+        System.out.println(this.getPetsOwned());
     }
 
     @Override
     public void feedPets() {
-        // TODO
+        System.out.println("Here is your food, buddy.");
     }
 
     @Override
     public void renamePet(Animal animal, String newName) {
-        // TODO
+        animal.setName(newName);
+        System.out.println("Your new name is : " + animal.getName());
     }
 
 }
