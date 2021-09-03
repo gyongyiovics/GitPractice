@@ -23,7 +23,7 @@ public class Humanoid implements HumanoidInterface {
         this.birth = birth;
     }
 
-    
+
 
     @Override
     public void getNewPet(Animal animal) {
