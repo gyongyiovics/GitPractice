@@ -2,6 +2,7 @@ package main.model.animals;
 
 public class Cat extends Animal {
 
-    // TODO
-
+    public void makeSound() {
+        System.out.println(getName() + " says meaowww.");
+    }
 }
