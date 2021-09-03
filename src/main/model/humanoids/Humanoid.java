@@ -18,9 +18,12 @@ public class Humanoid implements HumanoidInterface {
     public Humanoid() {}
 
     public Humanoid(String lastName, String firstName, LocalDate birth) {
-        // TODO
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.birth = birth;
     }
 
+    
 
     @Override
     public void getNewPet(Animal animal) {
