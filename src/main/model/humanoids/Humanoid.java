@@ -23,7 +23,45 @@ public class Humanoid implements HumanoidInterface {
         this.birth = birth;
     }
 
+    public String getLastName() {
+        return lastName;
+    }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public LocalDate getBirth() {
+        return birth;
+    }
+
+    public boolean isSad() {
+        return isSad;
+    }
+
+    public List<Animal> getPetsOwned() {
+        return petsOwned;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setBirth(LocalDate birth) {
+        this.birth = birth;
+    }
+
+    public void setSad(boolean sad) {
+        isSad = sad;
+    }
+
+    public void setPetsOwned(List<Animal> petsOwned) {
+        this.petsOwned = petsOwned;
+    }
 
     @Override
     public void getNewPet(Animal animal) {
